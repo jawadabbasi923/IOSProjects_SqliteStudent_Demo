@@ -1,1 +1,1 @@
-
+https://api.instagram.com/oauth/authorize?client_id=1064754501474316&redirect_uri=https://github.com/jawadabbasi923/IOSProjects_SqliteStudent_Demo/blob/master/testfile&scope=user_profile,user_media&response_type=code
