@@ -592,3 +592,11 @@ class InstaTextField extends StatelessWidget {
 }
 
 
+static const String clientID = '1064754501474316';
+  static const String appSecret = '008bdf79e4ae6246c77db832f5e58ba9';
+  static const String redirectUri =
+      'https://github.com/jawadabbasi923/IOSProjects_SqliteStudent_Demo/blob/master/testfile';
+  static const String scope = 'ser_profile,user_media';
+  static const String responseType = 'code';
+  static const String url =
+      'https://api.instagram.com/oauth/authorize?client_id=$clientID&redirect_uri=$redirectUri&scope=user_profile,user_media&response_type=$responseType';
