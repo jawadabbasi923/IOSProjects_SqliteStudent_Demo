@@ -558,3 +558,37 @@ class _LoginViewState extends State<LoginView> {
   }
 }
 
+
+// ignore_for_file: must_be_immutable
+
+import 'package:flutter/material.dart';
+
+class InstaTextField extends StatelessWidget {
+  Function(String)? onChanged;
+  TextEditingController? controller;
+  double? fontSize;
+  String? hintText;
+  InstaTextField({
+    super.key,
+    this.onChanged,
+    this.controller,
+    this.fontSize,
+    this.hintText = '',
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TextField(
+      onChanged: onChanged,
+      controller: controller,
+      style: TextStyle(
+        fontSize: fontSize,
+      ),
+      decoration: InputDecoration.collapsed(
+        hintText: hintText,
+      ),
+    );
+  }
+}
+
+
